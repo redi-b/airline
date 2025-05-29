@@ -1,0 +1,124 @@
+.hero {
+    background: linear-gradient(to bottom, #1e3a8a, #3b82f6);
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.bookings-link {
+    display: block;
+    margin-top: 1rem;
+}
+
+.destinations {
+    padding: 3rem 1rem;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.destination-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content p {
+    margin-bottom: 0.5rem;
+}
+
+.popular-routes {
+    padding: 3rem 1rem;
+    background-color: #ffffff;
+}
+
+.popular-routes-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+    gap: 1.5rem;
+}
+
+.popular-routes-card {
+    height: 100%;
+    text-align: center;
+    border: 2px solid #3b82f6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popular-routes-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.popular-routes-card .card-header {
+    padding: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.popular-routes-card p {
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.why-choose-us {
+    padding: 3rem 1rem;
+    background-color: #f4f4f9;
+}
+
+.why-choose-us-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.why-choose-us-card {
+    text-align: center;
+    height: 100%;
+}
+
+.why-choose-us-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #1e3a8a;
+}
+
+.why-choose-us-card p {
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .popular-routes-card .card-header,
+    .why-choose-us-card h3 {
+        font-size: 1.1rem;
+    }
+}

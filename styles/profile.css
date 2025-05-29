@@ -1,0 +1,67 @@
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.success {
+    background-color: #dcfce7;
+    color: #16a34a;
+    padding: 0.75rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.error {
+    background-color: #fee2e2;
+    color: #dc2626;
+    padding: 0.75rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .profile {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .card-header h3 {
+        font-size: 1.25rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .form-input,
+    .form-textarea {
+        padding: 0.65rem;
+        font-size: 0.95rem;
+    }
+
+    .submit-button {
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+
+    .success,
+    .error {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+}

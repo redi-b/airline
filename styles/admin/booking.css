@@ -1,0 +1,141 @@
+.booking-card {
+    max-width: 600px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.booking-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.booking-card .card-header {
+    background: linear-gradient(to right, #1e3a8a, #3b82f6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.booking-card .card-header h4 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.booking-card .card-content {
+    padding: 1rem 1.5rem;
+}
+
+.booking-details {
+    display: grid;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+}
+
+.detail .label {
+    font-weight: 600;
+    color: #1e3a8a;
+}
+
+.detail span:last-child {
+    color: #4b5563;
+}
+
+.flight-info {
+    display: flex;
+    gap: 0.5rem;
+    color: #4b5563;
+}
+
+.flight-route {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.booking-actions {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-top: 1px solid #e5e7eb;
+    border-radius: 0 0 8px 8px;
+    background-color: #f9fafb;
+}
+
+.update-form,
+.delete-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+    min-width: 200px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #1e3a8a;
+}
+
+.form-group select {
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    color: #4b5563;
+    width: 100%;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+.action-btn img {
+    width: 18px;
+    height: 18px;
+}
+
+.update-btn {
+    background-color: #3b82f6;
+}
+
+.update-btn:hover {
+    background-color: #1e3a8a;
+}
+
+.delete-btn {
+    background-color: #dc2626;
+}
+
+.delete-btn:hover {
+    background-color: #b91c1c;
+}

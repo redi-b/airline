@@ -1,0 +1,139 @@
+.form-section {
+    margin-bottom: 2rem;
+}
+
+.flights-section {
+    margin-top: 2rem;
+}
+
+.flights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.flight-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flight-card .card-content {
+    padding: 1rem 1.5rem 0.5rem 1.5rem;
+}
+
+.flight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.flight-card .card-header {
+    background: linear-gradient(to right, #1e3a8a, #3b82f6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.flight-card .card-header h4 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.flight-card .card-header .airline {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.flight-route {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #1e3a8a;
+}
+
+.flight-details {
+    padding: 1rem 1.5rem;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+}
+
+.detail .label {
+    font-weight: 600;
+    color: #1e3a8a;
+}
+
+.detail span:last-child {
+    color: #4b5563;
+}
+
+.flight-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    padding: 0.5em 0.75rem;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn img {
+    width: 18px;
+    height: 18px;
+}
+
+.edit-btn {
+    background-color: #3b82f6;
+}
+
+.edit-btn:hover {
+    background-color: #1e3a8a;
+}
+
+.delete-btn {
+    background-color: #dc2626;
+}
+
+.delete-btn:hover {
+    background-color: #b91c1c;
+}
+
+.no-flights {
+    text-align: center;
+    color: #6b7280;
+    font-size: 1.1rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for cards */
+.animate__fadeIn {
+    animation: fadeIn 0.5s ease-out forwards;
+}

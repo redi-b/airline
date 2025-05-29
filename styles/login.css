@@ -1,0 +1,38 @@
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+    padding: 2rem 1rem;
+}
+
+.brand {
+    position: absolute;
+    top: 1rem;
+    left: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.container {
+    max-width: 450px;
+    width: 100%;
+}
+
+.form p {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+@media (max-width: 768px) {
+    .login-section {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+}
